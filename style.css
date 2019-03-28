@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.about{
+	height: 300vh;
+	display: flex;
+	background-color: #818181;
+}
+
+.about-title{
+	top : 10vh;
+	width: 50%;
+	height: 100vh;
+	margin: 0!important;
+  animation: Slide_Left 2s ease;
+}
+
+
+.text{
+  margin-top: 15px;
+  margin-bottom: 10vh;
+  font-family: 'Bree Serif',sans-serif;
+	text-align: center;
+  color: #5b5b5b;
+	font-size: 2.4vw;
+}
+
+.photo {
+  padding: 6px;
+  width: 45vh;
+  height: 45vh;
+  background: white;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 2px 3px 1px #758285;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.photo img {
+  width: 88%;
+  border-radius: 50%;
+}
+
+.about-pages{
+	width: 50%;
+}
+
+.about-pages div{
+	height: 100vh;
+	display: flex;
+	font-family: 'Bree Serif',sans-serif;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	color: #5b5b5b;
+	background-image: linear-gradient(to right, #eeeeee, white);
+	background-size: 110%;
+}
+
+.project .content{
+	height: 10vh;
+	width: 37vw;
+	margin-left: 15%;
+	background-image: linear-gradient(to right,#d1d1d1,white);
+  border-top-left-radius: 15vh;
+  border-bottom-left-radius: 15vh;
+  letter-spacing: 1.5px
+}
+.project p i{
+  font-size: 3vh;
+}
+.tile h1{
+	font-family: 'Bree Serif',sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 1.3vw;
+	font-weight: normal;
+}
+
+.panels div:nth-child(1):hover a{
+	background-color: #014971;
+}
+.panels div:nth-child(2):hover a{
+	background-color: #037cb4;
+}
+
+.panels div:nth-child(3):hover{
+	background-color: #2fb3dd;
+}
+
+.panels div:nth-child(3) h1{
+  margin-top: 2vh;
+}
+
+.panels div:nth-child(3):hover > ul{
+  margin-top: 2.5vh;
+  display: block;
+}
+.panels div:nth-child(3):hover ul a{
+	background-color: #3d9eb9;
+}
+.panels div:nth-child(3):hover ul:hover a{
+	background-color: #2c8da8;
+}
+
+.panels div:nth-child(3):hover ul a h1{
+	margin-top: -5px;
+}
+
+
+p{
+	font-size: 1.25vw;
+	margin-left: 23%;
+	margin-top: -23%;
+	margin-right: 7%;
+
+}
+
+footer{
+		display: flex;
+		bottom: 0;
+}
+.column{
+	width: 50vw;
+	height: 10vh;
+	font-weight: normal;
+	font-family: 'Bree Serif',serif;
+	color: white;
+	padding: 2% 0.5% 0 0.5%;
+	font-size: 2.4vh;
+}
+
+footer div:nth-child(1){
+	text-align: right;
+	background: #818181;
+}
+footer div:nth-child(2){
+	color: #5b5b5b;
+	text-align: left;
+	background-image: linear-gradient(to right, #eeeeee, white);
+}
+
+.btn{
+	background-color:white;
+}
+.tile{
+	height: 8vh;
+	width: 12vw;
+	border-radius: 3vh;
+	-webkit-box-shadow: 30px 23px 60px -23px rgba(255,255,255,1);
+  -moz-box-shadow: 30px 23px 60px -23px rgba(255,255,255,1);
+	box-shadow: 30px 23px 60px -23px rgba(255,255,255,1);
+
+}
+a{
+	height: 8vh;
+	width: 12vw;
+	text-decoration: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3vh;
+}
+a:hover {
+text-decoration: none;
+}
+
+.panels div:nth-child(1) a{
+	background-color: #125a82;
+}
+
+.panels div:nth-child(2) a{
+	background-color: #148dc5;
+}
+
+.panels div:nth-child(3){
+	background-color: #30c4ee;
+}
+
+.panels{
+	display: flex;
+	justify-content:space-around;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  display: none;
+}
+li{
+  height: 25px;
+}
+
+
+ul > li{
+  position: relative;
+  z-index: 100;
+}
+.project{
+  animation: Slide_Right 1.3s ease;
+}
+@keyframes Slide_Right {
+  0%{
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes Slide_Left {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
